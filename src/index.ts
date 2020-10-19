@@ -4,7 +4,7 @@ export function hrtime(time?: HighResolutionTime): HighResolutionTime {
   return process.hrtime(time)
 }
 
-export function hrtimeToNanos(hrtime:HighResolutionTime): number {
+export function hrtimeToNanos(hrtime: HighResolutionTime): number {
   return hrtime[0] * 1e9 + hrtime[1]
 }
 

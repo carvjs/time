@@ -3,5 +3,6 @@ import { hrtime } from '../src'
 test('hrtime', () => {
   const time = hrtime()
 
-  expect(time).toBeInstanceOf(Array)
+  expect(Array.isArray(time)).toBe(true)
+  expect(time).toHaveLength(2)
 })
